@@ -14,22 +14,22 @@ void setup() {
   }
 }
 
-int brake_pedal_pin = A0
-int accelerator_pedal_pin = A1
-int status
-float ADC_conversion = 5/1023
+int brake_pedal_pin = A0;
+int accelerator_pedal_pin = A1;
+int status;
+float ADC_conversion = 5/1023;
 
 void signal_pedal_verification(int pedal_1, int pedal_2) 
 {
-  brake_reading = analogRead(pedal_1)
-  accelerator_reading = analogRead(pedal_2)
+  brake_reading = analogRead(pedal_1);
+  accelerator_reading = analogRead(pedal_2);
 
-  brake_voltage = float(brake_pedal_pin * ADC_conversion)
-  accelerator_voltage = float(accelerator_pedal_pin * ADC_conversion) 
+  brake_voltage = float(brake_pedal_pin * ADC_conversion);
+  accelerator_voltage = float(accelerator_pedal_pin * ADC_conversion);
 
   
 
- voltage_conditions = [brake_voltage > 2.5 && accelerator < 2.5, brake_voltage < 2.5 && accelerator > 2.5, brake_voltage && accelerator == 2.5]
+ voltage_conditions = [brake_voltage > 2.5 && accelerator < 2.5, brake_voltage < 2.5 && accelerator > 2.5, brake_voltage && accelerator == 2.5];
 
   //Assuming brake_voltage = 5 V at rest so accelerator_voltage = 0 V at rest
  if( 1 // Maybe we cycle through the conditions, or we could store previous couple pedal outputs and make sure multiple signals are correct vs just one) 
@@ -45,11 +45,11 @@ void signal_pedal_verification(int pedal_1, int pedal_2)
 
 void loop() {
 
-  pinmode(brake_pedal_pin, INPUT)
-  pinmode(accelerator_pedal_pin, INPUT)
+  pinmode(brake_pedal_pin, INPUT);
+  pinmode(accelerator_pedal_pin, INPUT);
 
   // send packet: id is 11 bits, packet can contain up to 8 bytes of data 
-  signal_pedal_verification(brake_pedal_pin, accelerator_pedal_pin)
+  signal_pedal_verification(brake_pedal_pin, accelerator_pedal_pin);
 
 ////// Probably will turn these into functions depending on complexity of content in 'if' loops
   if (status == 0) // Pedals Fail
