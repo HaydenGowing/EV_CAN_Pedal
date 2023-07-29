@@ -34,7 +34,7 @@ void signal_pedal_verification(int pedal_1, int pedal_2)
   //Assuming brake_voltage = 5 V at rest so accelerator_voltage = 0 V at rest
  if( 1 // Maybe we cycle through the conditions, or we could store previous couple pedal outputs and make sure multiple signals are correct vs just one) 
  {
-  status = 1; 
+   status = 1; 
  }
  else
  {
