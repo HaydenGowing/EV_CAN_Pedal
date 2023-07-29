@@ -29,10 +29,10 @@ void signal_pedal_verification(int pedal_1, int pedal_2)
 
   
 
- // voltage_conditions = [brake_voltage > 2.5 && accelerator < 2.5, brake_voltage < 2.5 && accelerator > 2.5, brake_voltage && accelerator == 2.5]
+ voltage_conditions = [brake_voltage > 2.5 && accelerator < 2.5, brake_voltage < 2.5 && accelerator > 2.5, brake_voltage && accelerator == 2.5]
 
   //Assuming brake_voltage = 5 V at rest so accelerator_voltage = 0 V at rest
- if(brake_voltage > 2.5 && accelerator < 2.5) 
+ if( 1 // Maybe we cycle through the conditions, or we could store previous couple pedal outputs and make sure multiple signals are correct vs just one) 
  {
   status = 1; 
  }
