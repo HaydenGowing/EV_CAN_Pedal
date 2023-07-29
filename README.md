@@ -12,7 +12,7 @@ The CAN Protocol (V6_1).pdf provides detailed information on the CAN protocol an
 
 [CAN Protocol (V6_1).pdf](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1ff552d2-bffb-46c4-842d-9aecac4ec688/CAN_Protocol_(V6_1).pdf)
 
-### Project Task Progress:
+### Project Tasks:
 
 - [ ]  Write the code to read the potentiometer values from the analog input pins on the Arduino
 - [ ]  Use the CAN library to convert the potentiometer values into a CAN message format
