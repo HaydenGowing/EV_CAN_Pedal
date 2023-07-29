@@ -4,8 +4,7 @@ This project aims to monitor the output voltages of the brake and accelerator pe
 
 
 <img width="800" alt="MicrosoftTeams-image (1)" src="https://github.com/HaydenGowing/EV_CAN_Pedal/assets/97248426/0ae32032-1f4a-4d6a-b0ed-374abeb04d74">
-                                                
-                                                Pedals Output Voltage Function
+_________________________________________________ Pedals Output Voltage Function _______________________________________________________
 
 ### CAN Datasheet:
 
