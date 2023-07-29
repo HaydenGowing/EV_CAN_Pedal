@@ -2,9 +2,9 @@
 
 This project aims to monitor the output voltages of the brake and accelerator pedals of a Formula race car and convert them into a CAN message format to be sent to the car MCU. The potentiometers in both pedals output feed into two analog input pins on the Arduino microcontroller, and the Arduino CAN library is utilized to convert the analog signals from the pedals into a CAN message.
 
-![Screenshot 2023-07-27 at 8.20.51 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56863534-ad7a-45a7-8b70-672ebe90adfd/Screenshot_2023-07-27_at_8.20.51_PM.png)
 
-                             ******************************************************************************Pedals inverse output voltage signals****************************************************************************** 
+<img width="268" alt="MicrosoftTeams-image (1)" src="https://github.com/HaydenGowing/EV_CAN_Pedal/assets/97248426/0ae32032-1f4a-4d6a-b0ed-374abeb04d74">
+                                                Pedals Output Voltage Function
 
 ### CAN Datasheet:
 
